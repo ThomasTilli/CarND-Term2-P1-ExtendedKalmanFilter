@@ -1,0 +1,34 @@
+Scanning dependencies of target ExtendedKF
+[ 20%] Building CXX object CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o
+In file included from /home/tom/CarND/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp:1:0:
+/home/tom/CarND/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.h:42:3: error: ‘MatrixXd’ does not name a type
+   MatrixXd R_laser_;
+   ^
+/home/tom/CarND/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.h:43:3: error: ‘MatrixXd’ does not name a type
+   MatrixXd R_radar_;
+   ^
+/home/tom/CarND/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.h:44:3: error: ‘MatrixXd’ does not name a type
+   MatrixXd H_laser_;
+   ^
+/home/tom/CarND/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.h:45:3: error: ‘MatrixXd’ does not name a type
+   MatrixXd Hj_;
+   ^
+/home/tom/CarND/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp: In constructor ‘FusionEKF::FusionEKF()’:
+/home/tom/CarND/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp:20:3: error: ‘R_laser_’ was not declared in this scope
+   R_laser_ = MatrixXd(2, 2);
+   ^
+/home/tom/CarND/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp:21:3: error: ‘R_radar_’ was not declared in this scope
+   R_radar_ = MatrixXd(3, 3);
+   ^
+/home/tom/CarND/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp:22:3: error: ‘H_laser_’ was not declared in this scope
+   H_laser_ = MatrixXd(2, 4);
+   ^
+/home/tom/CarND/CarND-Extended-Kalman-Filter-Project/src/FusionEKF.cpp:23:3: error: ‘Hj_’ was not declared in this scope
+   Hj_ = MatrixXd(3, 4);
+   ^
+CMakeFiles/ExtendedKF.dir/build.make:62: die Regel für Ziel „CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o“ scheiterte
+make[2]: *** [CMakeFiles/ExtendedKF.dir/src/FusionEKF.cpp.o] Fehler 1
+CMakeFiles/Makefile2:67: die Regel für Ziel „CMakeFiles/ExtendedKF.dir/all“ scheiterte
+make[1]: *** [CMakeFiles/ExtendedKF.dir/all] Fehler 2
+Makefile:83: die Regel für Ziel „all“ scheiterte
+make: *** [all] Fehler 2
